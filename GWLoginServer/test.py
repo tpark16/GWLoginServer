@@ -12,7 +12,6 @@ from PyQt5.QtWidgets import *
 
 from gw_utils import GWUtils
 
-#default_path = 'C:/Users/si/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/EQ_Map/res'
 _ui_path = 'GWLoginServerUI.ui'
 FORM_CLASS, _ = uic.loadUiType(_ui_path)
 
@@ -226,11 +225,6 @@ class main(QMainWindow, FORM_CLASS):
 
         return QMessageBox.information(self, '알림', '성공적으로 실행했습니다.')
 
-
-        # t = threading.Thread(target=start_server())
-        # t.daemon = True
-        # t.start()
-        #쓰레드 추가해서 서버 돌리기
 
 if __name__ == "__main__":
 
